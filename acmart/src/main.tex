@@ -1,0 +1,76 @@
+\newif\ifcameraready
+% Set this to `\camerareadytrue` when working on the camera-ready version.
+\camerareadytrue
+
+\ifcameraready
+    \documentclass[sigconf]{acmart}
+\else
+    \documentclass[sigconf, review, anonymous]{acmart}
+\fi
+
+
+\usepackage[utf8]{inputenc}
+\usepackage{cleveref}
+\usepackage{tcolorbox}
+\usepackage{todonotes}
+\usepackage{xspace}
+
+\crefname{lstlisting}{listing}{listings}
+\Crefname{lstlisting}{Listing}{Listings}
+
+\tcbuselibrary{breakable}
+
+\input{macros}
+
+\title{Another Great Paper}
+
+
+\author{Jane Doe}
+\email{jane.doe@example.com}
+\orcid{XXXX-XXXX-XXXX-XXXX}
+\affiliation{%
+    \institution{Some University}
+    \city{Some City}
+    \country{Some Country}
+}
+
+\author{John Doe}
+\email{john.doe@example.com}
+\orcid{XXXX-XXXX-XXXX-XXXX}
+\affiliation{%
+    \institution{Some Company}
+    \city{Some City}
+    \country{Some Country}
+}
+
+
+\citestyle{acmnumeric}
+\acmConference[XXX'YY]{XXX}{DATE--DATE}{LOCATION}
+
+
+\input{abstract}
+
+
+\begin{document}
+
+\maketitle
+
+\input{introduction}
+\input{background}
+\input{motivating_example}
+\input{approach}
+\input{implementation}
+\input{evaluation}
+\input{related_work}
+\input{conclusion}
+
+\ifcameraready 
+    \section*{Acknowledgment}
+    We acknowledge X, Y and Z for their help.
+\fi
+
+\clearpage
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}
