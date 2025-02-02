@@ -1,0 +1,86 @@
+\newif\ifcameraready
+% Set this to `\camerareadytrue` when working on the camera-ready version.
+\camerareadyfalse
+
+\documentclass[10pt, conference]{IEEEtran}
+
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cite}
+\usepackage{cleveref}
+\usepackage{hyperref}
+\usepackage{tcolorbox}
+\usepackage{todonotes}
+\usepackage{xspace}
+
+\crefname{lstlisting}{listing}{listings}
+\Crefname{lstlisting}{Listing}{Listings}
+
+\tcbuselibrary{breakable}
+
+\input{macros}
+
+\title{Another Great Paper}
+
+% Authors are anonymized in the non-camera-ready versions.
+\ifcameraready
+
+    \author{
+        \IEEEauthorblockN{Jane Doe}
+        \IEEEauthorblockA{
+            Some University\\
+            Some City\\
+            jane.doe@example.com
+        }
+        
+        \and
+
+        \IEEEauthorblockN{John Doe}
+        \IEEEauthorblockA{
+            Some Company\\
+            Some City\\
+            john.doe@example.com
+        }
+    }
+
+\else 
+
+    \author{
+        \IEEEauthorblockN{Anonymous Author(s)}
+        \IEEEauthorblockA{
+            Some affiliation\\
+            Some place\\
+            anony@mo.us
+        }
+    }
+
+\fi
+
+
+\begin{document}
+
+\maketitle
+
+\input{abstract}
+\input{introduction}
+\input{background}
+\input{motivating_example}
+\input{approach}
+\input{implementation}
+\input{evaluation}
+\input{related_work}
+\input{conclusion}
+
+\ifcameraready 
+    \section*{Acknowledgment}
+    We acknowledge X, Y and Z for their help.
+\fi
+
+\clearpage
+% Use this to equalize the last two columns if needed.
+% The left column will be cut at the provided reference number (here, 42).
+%\IEEEtriggeratref{42}
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
