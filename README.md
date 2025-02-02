@@ -12,7 +12,7 @@ the one which corresponds to your target conference's template.
 You should follow these steps to adapt the template to your needs:
 1. Clone this repo:
    ```console
-   $ git clone git@github.com:kokkonisd/cs-paper-template.git
+   $ git clone https://github.com/kokkonisd/cs-paper-template.git
    ```
 2. (Optionally) checkout a specific version:
    ```console
