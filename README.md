@@ -31,7 +31,8 @@ You should follow these steps to adapt the template to your needs:
 6. In `src/main.tex`, change `\title{Another Great Paper}` to the actual title of your paper.
    Change the author list (under `\author{...}`). Note that you can use the
    `\cameraready{true,false}` macro to switch between review mode (anonymous) and camera-ready
-   mode.
+   mode. There might also be other metadata (such as `\acmConference` in the `acmart` template)
+   that you need to edit or add to the existing code.
 7. If you add more scripts under `scripts/` or need to note more dependencies, make sure to update
    the appropriate sections in `README.md`.
 
