@@ -39,5 +39,5 @@ You should follow these steps to adapt the template to your needs:
 The license found in [`LICENSE`](./LICENSE) is the [Creative Commons Attribution-ShareAlike 4.0
 International](https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1) and it applies to
 the _template_ (i.e., the contents of this repo), not your paper. Both the `IEEEtran` and `acmart`
-templates are licensed under [the LaTeX Project Public License 1.3
+LaTeX templates are licensed under [the LaTeX Project Public License 1.3
 (LPPL-1.3c)](https://ctan.org/license/lppl1.3).
